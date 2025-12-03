@@ -23,15 +23,15 @@ export default function About() {
         return (
           <>
            <PageHeader backgroundImage={abouth} title="SIMPLE VEDAS" />
-          <Box className="flex flex-col md:flex-row items-start gap-4 md:gap-6 w-full max-w-[1200px] mx-auto p-4 md:p-6  rounded-lg mt-6 overflow-hidden">
-            <Box className="flex flex-col-reverse md:flex-row items-stretch w-full p-4 ">
+          <Box className="flex flex-col md:flex-row items-start gap-4 md:gap-6 w-full max-w-[1200px] mx-auto p-4 md:p-6 rounded-lg mt-6 overflow-hidden">
+            <Box className="flex flex-col-reverse md:flex-row items-stretch w-full p-4">
               {/* Left side - Text Box */}
-              <Box className="flex-1 md:flex-[0_0_65%] p-4  flex flex-col overflow-hidden ">
+              <Box className="flex-1 md:flex-[0_0_65%] p-4 flex flex-col overflow-hidden">
                 <Typography 
                   component="div"
-                  className="text-justify font-bold  [word-spacing-10px]  md:text-sm text-black [&>p]:mt-0 [&>p]:mb-2 [&>p:first-of-type]:mt-0 [&>strong]:font-bold "
+                  className="text-justify font-bold [word-spacing-10px] md:text-sm text-black [&>p]:mt-0 [&>p]:mb-2 [&>p:first-of-type]:mt-0 [&>strong]:font-bold"
                 >
-                  <p className="leading-[1.8] [word-spacing:0.2em] text-md pb-2 ">
+                  <p className="leading-[1.8] [word-spacing:0.2em] text-md pb-2">
                     <span className="font-bold text-[1.05em]">Veda</span> means knowledge. Any knowledge we accept is{" "}
                     <span className="font-bold text-[1.05em]">Veda</span>, for the teachings of the Vedas are the original
                     knowledge. The knowledge found therein is both physical and
@@ -47,10 +47,10 @@ export default function About() {
                     to human society.
                   </p>
 
-                  <p className="leading-[1.8] [word-spacing:0.2em] text-md pb-2" >
+                  <p className="leading-[1.8] [word-spacing:0.2em] text-md pb-2">
                     The secrets of the <span className="font-bold text-[1.05em]">Gita</span>, the mysteries of the{" "}
                     <span className="font-bold text-[1.05em]">Puranas</span>, the life lessons from the{" "}
-                    <span className="font-bold text-[1.05em]">Ramayana</span> and the <span> className="font-bold text-[1.05em]"Mahabharata</span>, the synthesis
+                    <span className="font-bold text-[1.05em]">Ramayana</span> and the <span className="font-bold text-[1.05em]">Mahabharata</span>, the synthesis
                     of science and spirituality, the complexities of the{" "}
                     <span className="font-bold text-[1.05em]">Upanishads</span> and the <span className="font-bold text-[1.05em]">Vedanta</span>, spiritual
                     practices, such as mindfulness, yoga, inner healing, chanting
@@ -69,22 +69,22 @@ export default function About() {
               </Box>
 
               {/* Right side - Image */}
-              <Box className="w-full md:flex-[0_0_35%] md:pr-10 md:mr-8 flex justify-center overflow-hidden md:ml-10">
+              <Box className="w-full  md:flex-[0_0_35%] flex justify-center items-start overflow-hidden md:pl-6">
                 <Box
                   component="img"
                   src={simpleVedasImg}
                   alt="Simple Vedas"
-                  className=" pt-3 md:w-auto md w-full"
+                  className="w-full h-full max-h-[400px] md:max-h-[500px] object-cover md:pt-2 px-4 md:px-0"
                 />
-              </Box>
-            </Box>
-          </Box>
+    </Box>
+  </Box>
+</Box>
         
           <hr className = "w-[85%] mx-auto mt-4 border-dotted"></hr>
           {/* Success Stats Section */}
           <Box className="mt-14 mb-1 ">
-            <Typography variant="h3" className=" text-center  text-[#1a1a1a] pb-4 ">
-                <span className="font-bold">Our Success Ratio</span>
+            <Typography variant="h3" className=" text-center  text-[#1a1a1a] md:pb-4 px-8 ">
+                <span className="font-bold md:text-5xl text-3xl" >Our Success Ratio</span>
             </Typography>
             <div className="flex justify-center gap-15  ">
               <div className="w-10 h-[3.5px] bg-gray-200"></div>
@@ -93,7 +93,7 @@ export default function About() {
             
             <Typography 
               variant="body1" 
-              className="text-[#a81919] pb-12 pt-8 text-xs md:text-sm max-w-full mx-auto font-extralight text-center "
+              className="text-[#a81919] md:pb-12 md:pt-8 px-4 pt-4 py-4 text-xs md:text-sm max-w-full mx-auto font-extralight text-center "
             >
               We measure our success through the satisfaction of our students. When they refer someone, we feel elated!
             </Typography>
@@ -169,31 +169,34 @@ export default function About() {
 
             <Box className=" w-full max-w-[1200px] mx-auto px-4 md:px-8  rounded-lg p-6">
               {/* Main Content */}
-              <Box className="pt-16 pb-8">
-                <Typography 
-                  variant="h3" 
-                  className=" text-center text-2xl md:text-3xl text-[#1a1a1a] pl-3 pt-2 pb-2 mb-2  md:text-[2.2rem] font-bold text-left flex flex-wrap items-center gap-4"
-                >
-                  <Box component="span" className="font-bold">HIS DIVINE GRACE</Box> 
-                  <Box component="span" className="text-[#ffc13c] text-5xl font-bold max-[750px]:basis-full">
-                    SRILA PRABHUPADA
-                  </Box>
-                  <Box className="w-10 md:w-[50px] h-0.5 bg-[#ffc13c]" />
-                </Typography>
+              <Box className="md:pt-16 md:pb-8 px-8 md:px-0">
+  <Typography 
+    variant="h3" 
+    className="text-2xl md:text-4xl lg:text-5xl text-[#1a1a1a] md:pl-3 pt-2 pb-4 font-bold text-left"
+  >
+    <Box component="span" className="block font-bold">HIS DIVINE GRACE</Box> 
+    <Box component="span" className="block text-[#ffc13c] font-bold mt-2">
+      SRILA PRABHUPADA
+    </Box>
+  </Typography>
 
-                <Typography 
-                  variant="h6" 
-                  className="text-left pb-12 pl-4 mb-4 text-sm md:text-base text-black font-extrabold pb-4"
-                >
-                  <strong className="uppercase text-lg">Founder-acharya of International Society for Krishna Consciousness</strong>
-                </Typography>
-              </Box>
+  <Box className="w-16 md:w-20 h-1 bg-[#ffc13c] md:ml-3 mb-6" />
+
+  <Typography 
+    variant="h6" 
+    className="text-left pb-12 md:pl-4 text-black font-bold text-xs md:text-sm lg:text-base"
+  >
+    <span className="uppercase">
+      Founder-acharya of International Society for Krishna Consciousness
+    </span>
+  </Typography>
+</Box>
 
                 {/* Image and Introduction */}
-                <Box className="flex flex-col md:flex-row gap-8 mb-10  rounded-lg p-0 items-stretch ">
-                  {/* Text on Left */}
-                  <Box className="flex-1 min-w-0  p-0 flex flex-col  ">
-                    <Typography variant="body1" className="text-justify  text-xs md:text-sm text-black p-4 mb-2  [word-spacing:0.15em]">
+                <Box className="flex flex-col-reverse px-4 md:flex-row gap-8 mb-10 rounded-lg md:p-0 items-stretch">
+                  {/* Text on Left (appears second on mobile, first on desktop) */}
+                  <Box className="flex-1 min-w-0 p-0 flex flex-col">
+                    <Typography variant="body1" className="text-justify text-xs md:text-sm text-black p-4 mb-2 [word-spacing:0.15em]">
                       <p className="leading-[1.8] [word-spacing:0.2em]">Srila Prabhupada – At various times people have called him a scholar, a philosopher, a cultural ambassador, a prolific author, a religious leader, a spiritual teacher, a social critic, and a holy man. In truth, he was all these things and more.</p>
                     </Typography>
 
@@ -202,7 +205,7 @@ export default function About() {
                     </Typography>
 
                     {/* A Lifetime of Preparation */}
-                    <Typography variant="h4" className="p-4 font-extralight mb-4 pt-5 pb-10  text-base md:text-xl text-black    inline-block ">
+                    <Typography variant="h4" className="p-4 font-extralight mb-4 pt-5 pb-10 text-base md:text-xl text-black inline-block">
                       <span className="font-bold text-3xl">A Lifetime of Preparation:</span>
                     </Typography>
                     
@@ -215,18 +218,18 @@ export default function About() {
                     </Typography>
                   </Box>
 
-                  {/* Image on Right */}
-                  <Box className="flex-1 flex rounded-lg justify-center items-stretch min-w-0 h-full">
+                  {/* Image on Right (appears first on mobile, second on desktop) */}
+                  <Box className="w-full md:w-auto md:flex-1 flex rounded justify-center items-start min-w-0">
                     <img
                       src={srilaPrabhupadaImg}
                       alt="Srila Prabhupada"
-                      className="w-full h-full object-cover pt-4 pr-6"
+                      className="md:pt-3 px-4"
                     />
                   </Box>
                 </Box>
 
                 {/* A Historic Voyage */}
-                <Box className="mb-8  rounded-lg p-4 ">
+                <Box className="mb-8  rounded-lg px-8 md:p-4 ">
                   <Typography variant="h5" className="font-extralight mb-4 text-base md:text-xl text-black  inline-block pb-14">
                     <span className="font-bold text-3xl">A Historic Voyage:</span>
                   </Typography>
@@ -237,7 +240,7 @@ export default function About() {
                 </Box>
 
                 {/* A World Acharya */}
-                <Box className="mb-8 rounded-lg p-4 leading-[1.8] [word-spacing:0.15em]">
+                <Box className="px-8 mb-8 rounded-lg md:p-4 leading-[1.8] [word-spacing:0.15em]">
                   <Typography variant="h5" className="font-extralight mb-4 pb-13 text-base md:text-xl text-black  inline-block ">
                     <span className="font-bold text-3xl">A World Acharya:</span>
                   </Typography>
@@ -264,7 +267,7 @@ export default function About() {
                 </Box>
 
                 {/* A Saint never dies */}
-                <Box className="mb-8  rounded-lg pl-4 [word-spacing:0.2em]">
+                <Box className="md:pb-4  rounded-lg pl-8 pr-4 m-0 md:pr-0 md:pl-4  [word-spacing:0.2em]">
                   <Typography variant="h5" className="font-extralight mb-4 text-base md:text-xl text-black inline-block pb-14 ">
                     <span className="font-bold text-3xl">A Saint never dies:</span>
                   </Typography>
@@ -282,18 +285,18 @@ export default function About() {
 
                 {/* Quote */}
                 {/* <Box className="bg-[#f9f9f9] border border-[#F5A623] border-l-4 border-l-[#F5A623] p-4 md:p-6 mb-8 rounded"> */}
-                <Box className="my-8 border-t-2 border-b-2 border-black py-6 mx-4">
+                <Box className="md:my-8 border-t-2 border-b-2 border-black md:py-6 md:mx-4 mx-8 p">
                   <Typography 
                     variant="body1" 
                     className=" leading-[1.8] text-xs md:text-sm text-[#800000] mb-4 "
                   >
-                    <p className="font-bold  text-xl ">He was a genuine holy person with enormous integrity and compassion, and he had a powerful impact on those who met him. He never claimed authority and respect for himself; what he said and did was always in the name of Krishna…
+                    <p className="font-bold  text-xl md:py-0 py-6">He was a genuine holy person with enormous integrity and compassion, and he had a powerful impact on those who met him. He never claimed authority and respect for himself; what he said and did was always in the name of Krishna…
                     </p>
                   </Typography>
                 </Box>
                   <Typography 
                     variant="body2" 
-                    className="text-[0.2rem] md:text-xs text-[#000000] font-extralight pb-12 flex justify-end"
+                    className="text-[0.2rem] md:text-xs text-[#000000] font-extralight px-4 pb-10 pt-10 md:pb-12 flex justify-end"
                   >
                     <p className="text-[1.2em] mx-4 flex flex-col items-end text-right">
                       <span className="pb-3">– Dr. Thomas J. Hopkins,</span>
@@ -305,7 +308,7 @@ export default function About() {
                 {/* Learn More Link */}
                 <Typography 
                   variant="body1" 
-                  className=" text-sm md:text-base text-black pb-12 pl-4"
+                  className=" text-sm md:text-base text-black px-7 md:pb-12 md:pl-4"
                 >
                   <p className="font-extrabold">More can be known about his life and activities at{" "} 
                   <Box 
@@ -320,9 +323,9 @@ export default function About() {
                   </p>
                   
                 </Typography>
-                <Box className="relative w-full pb-[56.25%] h-0 overflow-hidden  ">
+                <Box className="relative w-full pb-[56.25%] h-full overflow-hidden my-8 md:my-4 ">
                 <iframe
-                  className="absolute top-0 left-0 w-full h-full px-4 py-2 pb-20"
+                  className="absolute top-0 left-0 w-full h-full md:px-4 md:py-2 md:pb-20 px-7 "
                   src="https://www.youtube.com/embed/UsoczeYeaY8"
                   title="Srila Prabhupada Video"
                   frameBorder="0"
@@ -339,14 +342,14 @@ export default function About() {
           <>
             <PageHeader backgroundImage={abouth} title="OUR INSPIRATION" />
 
-            <Box className="w-full max-w-[1200px] mx-auto  pt-4 px-4 md:px-8">
+            <Box className="w-full max-w-[1200px] mx-auto pt-4 px-4 md:px-8">
               {/* Gopal Krishna Goswami */}
-              <Box className="mb-16 mt-8 pl-4">
+              <Box className="mb-16 mt-8">
                 <Typography 
                   variant="h3" 
-                  className="pb-10 text-xl md:text-2xl text-[#1a1a1a]"
+                  className="pb-10 text-xl md:text-2xl text-[#1a1a1a] px-4 md:px-0 md:pl-8 md:pt-12 md:pb-18"
                 >
-                  <Box className="flex flex-wrap items-center gap-4 pl-3 pb-8 pt-8">
+                  <Box className="flex flex-wrap items-center gap-4 px-4">
                     <Box className="font-bold">
                       <span className="whitespace-nowrap">HIS HOLINESS</span>{" "}
                       <Box component="span" className="text-[#ffc13c] max-[750px]:block">
@@ -357,20 +360,22 @@ export default function About() {
                   </Box>
                 </Typography>
 
-                <Box className="flex flex-col md:flex-row gap-8 mb-10 pl-4 ">
-                  <Box className="flex-1 md:flex-[0_0_65%] pr-4">
-                    <Typography variant="body1" className="text-justify leading-[1.9] text-xs md:text-sm text-black font-extralight mb-6 pb-4 [word-spacing:0.15em]">
-                      <p className="leading-[1.8] [word-spacing:0.2em]">His Holiness Gopal Krishna Goswami Maharaj was a senior disciple of His Divine Grace A.C. Bhaktivedanta Swami Prabhupada. He played a leading role in spreading the divine message of Bhagavad-gita As It Is. He graduated from Delhi University, and studied Business Management at the University of Paris in Sorbonne and later obtained his Master's degree in Business Administration from the McGill University of Montreal, Canada.
+                <Box className="flex flex-col-reverse md:flex-row gap-8 md:gap-16 md:pl-8">
+                  <Box className="flex-1 md:flex-[0_0_62%] px-4 md:px-0">
+                    <Typography variant="body1" className="text-justify leading-[1.9] text-xs md:text-sm text-black font-extralight mb-6 [word-spacing:0.15em]">
+                      <p className="leading-[1.8] [word-spacing:0.2em] pb-3">
+                        His Holiness Gopal Krishna Goswami Maharaj was a senior disciple of His Divine Grace A.C. Bhaktivedanta Swami Prabhupada. He played a leading role in spreading the divine message of Bhagavad-gita As It Is. He graduated from Delhi University, and studied Business Management at the University of Paris in Sorbonne and later obtained his Master's degree in Business Administration from the McGill University of Montreal, Canada.
                       </p>
                     </Typography>
 
                     <Typography variant="body1" className="text-justify leading-[1.9] text-xs md:text-sm text-black font-extralight [word-spacing:0.15em]">
-                      <p className="leading-[1.8] [word-spacing:0.2em]">Maharaja was ISKCON GBC (Governing Body Commissioner) of over thirty temples around the world and served as an initiating spiritual master, with thousands of disciples in Russia, America, Canada, Europe, Asia, Africa, Australia and New Zealand. Also, he was the Chairman and Trustee of the Bhaktivedanta Book Trust, the world's largest publisher and distributor of Vedic literature.
+                      <p className="leading-[1.8] [word-spacing:0.2em]">
+                        Maharaja was ISKCON GBC (Governing Body Commissioner) of over thirty temples around the world and served as an initiating spiritual master, with thousands of disciples in Russia, America, Canada, Europe, Asia, Africa, Australia and New Zealand. Also, he was the Chairman and Trustee of the Bhaktivedanta Book Trust, the world's largest publisher and distributor of Vedic literature.
                       </p>
                     </Typography>
                   </Box>
 
-                  <Box className="flex-1 md:flex-[0_0_30%] flex justify-center items-start ">
+                  <Box className="flex-1 md:flex-[0_0_30%] flex justify-center items-start px-4 md:px-0">
                     <Box
                       component="img"
                       src="https://i0.wp.com/simplevedas.com/wp-content/uploads/2022/02/His-Holiness-Gopal-Krishna-Goswami-Maharaja-3.jpg?fit=640%2C640&ssl=1"
@@ -381,24 +386,22 @@ export default function About() {
                 </Box>
               </Box>
 
-              {/* Divider */}
-              {/* <Box className="border-b-2 border-gray-300 mb-16" /> */}
-
               {/* Bhakti Tirtha Swami */}
-              <Box className="mb-16 pl-8">
+              <Box className="mb-16">
                 <Typography 
                   variant="h3" 
-                  className="flex font-extrabold mb-10  pt-10 pb-20 text-xl md:text-2xl text-[#1a1a1a]"
+                  className="pb-10 text-xl md:text-2xl text-[#1a1a1a] px-4 md:px-0 md:pl-8"
                 >
-                  <p className="font-bold">
-                    HIS HOLINESS <Box component="span" className="text-[#ffc13c]">BHAKTI TIRTHA SWAMI</Box>
-                  
-                  </p>
-                  <Box className="w-16 h-1 mt-6 ml-3 bg-[#ffc13c]" />
+                  <Box className="flex flex-wrap items-center gap-4">
+                    <Box className="font-bold">
+                      HIS HOLINESS <Box component="span" className="text-[#ffc13c]">BHAKTI TIRTHA SWAMI</Box>
+                    </Box>
+                    <Box className="w-16 h-1 bg-[#ffc13c]" />
+                  </Box>
                 </Typography>
 
-                <Box className="flex flex-col md:flex-row gap-8  ">
-                  <Box className="flex-1 md:flex-[0_0_30%] flex justify-center items-start ">
+                <Box className="flex flex-col md:flex-row gap-8 md:gap-16 md:pl-8">
+                  <Box className="flex-1 md:flex-[0_0_30%] flex justify-center items-start px-4 md:px-0">
                     <Box
                       component="img"
                       src="https://i0.wp.com/simplevedas.com/wp-content/uploads/2023/02/BT-Swami.jpg?fit=640%2C640&ssl=1"
@@ -407,53 +410,57 @@ export default function About() {
                     />
                   </Box>
 
-                  <Box className="flex-1 md:flex-[0_0_65%] pl-4">
-                    <Typography variant="body1" className="text-justify leading-[1.9] text-xs md:text-sm text-black font-extralight mb-6 [word-spacing:0.15em] pb-4">
-                      <p className="leading-[1.8] [word-spacing:0.2em]">His Holiness Bhakti Tirtha Swami was born John E. Favors in a pious, God-fearing family. He graduated from Princeton University and was then a leader in Dr. Martin Luther King Jr's civil rights movement. He was a charismatic spiritual leader who was known for his eclectic and dynamic preaching strategies. Widely acknowledged as a global specialist in international relations and conflict resolution, he became a spiritual consultant to many high-ranking members of the United Nations, celebrities, chiefs and kings around the world.
+                  <Box className="flex-1 md:flex-[0_0_62%] px-4 md:px-0">
+                    <Typography variant="body1" className="text-justify leading-[1.9] text-xs md:text-sm text-black font-extralight mb-6 [word-spacing:0.15em]">
+                      <p className="leading-[1.8] [word-spacing:0.2em] pb-3">
+                        His Holiness Bhakti Tirtha Swami was born John E. Favors in a pious, God-fearing family. He graduated from Princeton University and was then a leader in Dr. Martin Luther King Jr's civil rights movement. He was a charismatic spiritual leader who was known for his eclectic and dynamic preaching strategies. Widely acknowledged as a global specialist in international relations and conflict resolution, he became a spiritual consultant to many high-ranking members of the United Nations, celebrities, chiefs and kings around the world.
                       </p>
                     </Typography>
 
                     <Typography variant="body1" className="text-justify leading-[1.9] text-xs md:text-sm text-black font-extralight [word-spacing:0.15em]">
-                      <p className="leading-[1.8] [word-spacing:0.2em]">He authored many books on leadership, practical spirituality, & his reflections on great holy scriptures. His passing away from this world was like his life, a deep expression of love and compassion, and a lesson for all of us. A lot more can be read about him in his official biography Black Lotus: The Spiritual Journey of an Urban Mystic.
+                      <p className="leading-[1.8] [word-spacing:0.2em]">
+                        He authored many books on leadership, practical spirituality, & his reflections on great holy scriptures. His passing away from this world was like his life, a deep expression of love and compassion, and a lesson for all of us. A lot more can be read about him in his official biography Black Lotus: The Spiritual Journey of an Urban Mystic.
                       </p>
                     </Typography>
                   </Box>
                 </Box>
               </Box>
 
-              {/* Divider */}
-              {/* <Box className="border-b-2 border-gray-300 mb-16" /> */}
-
               {/* Bhakti Dhira Damodara Swami */}
-              <Box className="mb-12 pl-8 pt-10 pb-20">
+              <Box className="mb-16">
                 <Typography 
                   variant="h3" 
-                  className="flex font-extralight pb-10 mb-10 text-xl md:text-2xl text-[#1a1a1a]"
+                  className="pb-10 text-xl md:text-2xl text-[#1a1a1a] px-4 md:px-0 md:pl-8 md:pt-16"
                 >
-                  <p className="font-bold">HIS HOLINESS <Box component="span" className="text-[#ffc13c]">BHAKTI DHIRA DAMODARA SWAMI</Box>
-                  </p>
-                  <Box className="w-16 h-1 mt-10 ml-2 bg-[#ffc13c]" />
+                  <Box className="flex flex-wrap items-center gap-4">
+                    <Box className="font-bold">
+                      HIS HOLINESS <Box component="span" className="text-[#ffc13c]">BHAKTI DHIRA DAMODARA SWAMI</Box>
+                    </Box>
+                    <Box className="w-16 h-1 bg-[#ffc13c]" />
+                  </Box>
                 </Typography>
 
-                <Box className="flex flex-col md:flex-row gap-8 mb-10">
-                  <Box className="flex-1 md:flex-[0_0_65%] pr-4">
+                <Box className="flex flex-col-reverse md:flex-row gap-8 md:gap-16 md:pl-8">
+                  <Box className="flex-1 md:flex-[0_0_62%] px-4 md:px-0">
                     <Typography variant="body1" className="text-justify leading-[1.9] text-xs md:text-sm text-black font-extralight mb-6 [word-spacing:0.15em]">
-                      <p className="leading-[1.8] [word-spacing:0.2em]">His Holiness Bhakti Dhira Damodara Swami Maharaja, the first African <span className="font-bold text-[1.05em]">sannyasi</span> and <span className="font-bold text-[1.05em]">diksha-guru</span> in ISKCON, is a grand-disciple of His Divine Grace A.C. Bhaktivedanta Swami Prabhupada. He is known and appreciated for his humility, gravity and deep knowledge. He tours and preaches extensively in different countries in Africa, in Brazil, India, Mauritius, the Seychelles and the United States.
+                      <p className="leading-[1.8] [word-spacing:0.2em] ">
+                        His Holiness Bhakti Dhira Damodara Swami Maharaja, the first African <span className="font-bold text-[1.05em]">sannyasi</span> and <span className="font-bold text-[1.05em]">diksha-guru</span> in ISKCON, is a grand-disciple of His Divine Grace A.C. Bhaktivedanta Swami Prabhupada. He is known and appreciated for his humility, gravity and deep knowledge. He tours and preaches extensively in different countries in Africa, in Brazil, India, Mauritius, the Seychelles and the United States.
                       </p>
                     </Typography>
 
                     <Typography variant="body1" className="text-justify leading-[1.9] text-xs md:text-sm text-black font-extralight [word-spacing:0.15em]">
-                      <p className="leading-[1.8] [word-spacing:0.2em]">He also regularly teaches <span className="font-bold text-[1.05em]">Bhakti-śāstrī</span> and <span className="font-bold text-[1.05em]">Bhakti-vaibhava</span> courses at the Vrindavan Institute of Higher Education (VIHE) and the Mayapur Institute (MI) and facilitates numerous seminars on the practical aspects of Krishna consciousness philosophy, such as community-building, self-sufficiency, etc. Following the desire of his spiritual master, Maharaja is also developing vibrant Krishna conscious self-sustainable farm communities in Ghana and Nigeria, Africa.
+                      <p className="leading-[1.8] [word-spacing:0.2em]">
+                        He also regularly teaches <span className="font-bold text-[1.05em]">Bhakti-śāstrī</span> and <span className="font-bold text-[1.05em]">Bhakti-vaibhava</span> courses at the Vrindavan Institute of Higher Education (VIHE) and the Mayapur Institute (MI) and facilitates numerous seminars on the practical aspects of Krishna consciousness philosophy, such as community-building, self-sufficiency, etc. Following the desire of his spiritual master, Maharaja is also developing vibrant Krishna conscious self-sustainable farm communities in Ghana and Nigeria, Africa.
                       </p>
                     </Typography>
                   </Box>
 
-                  <Box className="flex-1 md:flex-[0_0_30%] flex justify-center items-start">
+                  <Box className="flex-1 md:flex-[0_0_30%] flex justify-center items-start px-4 md:px-0">
                     <Box
                       component="img"
                       src="https://i0.wp.com/simplevedas.com/wp-content/uploads/2022/02/Bhakti-Dhira-Damodara-Swami.jpeg?fit=640%2C640&ssl=1"
                       alt="His Holiness Bhakti Dhira Damodara Swami"
-                      className="w-full h-auto object-cover "
+                      className="w-full h-auto object-cover"
                     />
                   </Box>
                 </Box>
@@ -470,9 +477,9 @@ export default function About() {
                 {/* Main Title */}
                 <Typography 
                   variant="h3" 
-                  className="font-bold mt-8 pl-4 mb-2  text-2xl md:text-[2.2rem] text-[#1a1a1a]"
+                  className="font-bold  md:mt-8 md:pl-4 md:mb-2  text-2xl md:text-[2.2rem] text-[#1a1a1a]"
                 >
-                  <p className="font-bold mb-2 flex flex-wrap items-center gap-4">
+                  <p className="font-bold flex flex-wrap items-center">
                     <span>MADHUSUDANA VISNU</span>
                     <Box component="span" className="text-[#ffc13c] max-[750px]:basis-full">
                       DAS
@@ -744,9 +751,9 @@ export default function About() {
   };
     
   return (
-    <Box>
+    <div>
       {getContent()}
       <NewsLetter />
-    </Box>
+    </div>
   );
 }
